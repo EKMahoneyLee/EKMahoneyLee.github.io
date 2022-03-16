@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+* {
+  font-family: 'Montserrat','Lato', 'Arial', sans-serif !important;
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+}
+
+html {
+    line-height: 40px;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+
+h1{
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  font-size:7.5em !important;
+}
+
+.header,p {
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  font-size:2.5em;
+}
+
+p{
+  color: black;
+  /* text-align: center; */
+  line-height: 1.4;
+  /* font-size:2.5em; */
+}
+
+a{
+  font-size: 2.2rem;
+} 
+
+.afont{
+  font-size: medium;
+}
+
+
+h2 {
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+
+
+
+img {
+    border-style: none; 
+}
+
+label{
+  font-size: 15px;
+}
+
+
+/* a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  font-size: 20px;
+  color: #008081 !important;
+  text-decoration: underline !important;
+} */
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  /* background-color: rgba(255, 111, 110, 0.55); */
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+li:nth-child(2) a {
+  overflow: hidden;
+}
+
+li:nth-child(2) a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+li:nth-child(2) a:hover::after,
+li:nth-child(2) a:focus::after{
+  transform: translate3d(0, 0, 0);
+}
+
+/* Scale from center */
+li:nth-child(3) a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+li:nth-child(3) a:hover::after,
+li:nth-child(3) a:focus::after{
+  transform: scale(1);
+}
+
+
+.footer-bg{
+  background-color: #333333;
+  color: white;
+}
+
+.imgIndex{
+  z-index: 2;
+  position:absolute;
+
+}
+
+
+ a{
+  z-index: 2;
+}
+
+
+/* .card-deck {
+  pointer-events: none;
+}  */
+
+
+/* skills and resume */
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    z-index: 100;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+  .card-img-top {
+  width: 100%;
+  height: 65vw;
+  object-fit: cover;}
+  }

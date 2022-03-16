@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name of Countries</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="1.js" defer></script> 
+</head>
+
+<body> 
+    <div class="container">   
+        <nav class="first">          
+            <h1  >Choose a country from the list: </h1>
+            <select id = "countryList">
+                <option value ="">Select One</option>
+            </select>          
+        </nav> 
+
+        <main class="second">
+            <section id = "flag">
+                <h4>Country Info:</h4>           
+                <h5 id="countryName"></h5> 
+                <img  id="flagImg">
+            </section><br>     
+
+            <section id="area">
+                <label for="Population">Population:</label><br>
+                <input id="Population" type="text" name="population" readonly><br><br><br> 
+
+                <label for="Area">Area in:</label> <br> 
+                <select id = "convertArea">
+                    <option value="Sq. Miles" selected>Sq. Miles</option>
+                    <option value="Sq. Km">Sq. Km</option>
+                </select> <br>                              
+                <input id="landarea" type="text" name="area" readonly>        
+            </section><br>  
+
+            <section id="density"> 
+                <label for="Area">Population Density:</label><br>   
+                <input type="radio" id="default"  name="density" value="sq_mile" checked>Per Square mile <br>  
+                <input type="radio"  name="density" value="sq_km">Per Square km <br> 
+                <input type="text" id="popDensity" name="density" readonly><br><br><br>
+                
+                Percentage of World Population:<br>
+                <input id="Percentage" type="text" name="PerWorldPopulation" readonly><br><br>
+
+                <button id="wiki" >Wiki Country</button>
+                <button id="quiz" >Launch Quiz</button>
+            </section> 
+        </main>        
+    </div>        
+</body>
+</html>
